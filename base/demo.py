@@ -11,5 +11,5 @@ from bs4 import BeautifulSoup
 request = urllib.request.urlopen('https://www.csdn.net/')
 soup = BeautifulSoup(request,'html.parser')
 print(type(soup))
-
+print(request)
 
