@@ -6,10 +6,7 @@
 # @Software: PyCharm
 
 
-import urllib.request
-from bs4 import BeautifulSoup
-request = urllib.request.urlopen('https://www.csdn.net/')
-soup = BeautifulSoup(request,'html.parser')
-print(type(soup))
-print(request)
+from selenium import webdriver
+dr = webdriver.Chrome()
+dr.get('https://www.baidu.com')
 
